@@ -1,0 +1,2 @@
+# Inclusive Design Patterns 
+I'm building a template for projects while reading [Inclusive Design Patterns](https://shop.smashingmagazine.com/products/inclusive-design-patterns). Accessibility is cool!
