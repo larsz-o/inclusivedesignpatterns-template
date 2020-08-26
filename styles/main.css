@@ -1,0 +1,58 @@
+* + h2, 
+* + h3 {
+    /* using em so that it scales with relative font size */
+    margin-top: 1.5em;
+}
+html {
+    font-size: 100%;
+}
+/* or whatever domain you are working on */
+/* adds an icon to any external link automatically */
+[href^="http"]:not([href*="larsmackenzie.com"])::after {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('path/to/external-link.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75% auto;
+    /* alternative text for the icon */
+    content: "(external link)";
+    overflow: hidden;
+    white-space: nowrap;
+    /* the width of the icon */
+    text-indent: 1em; 
+}
+li, dt, dd, br, th, td { 
+    margin-top: 0;
+}
+main {
+    max-width: 60rem;
+}
+main * + * {
+    margin-top: 1.5rem;
+}
+main * + *:not(p) {
+    margin: 3rem 0;
+}
+/* does not display any empty tags that might be created by a WYSIWYG editor */
+main :empty {
+    display: none;
+}
+p a:focus {
+    outline: none;
+    background-color: #cef;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+@media (min-width: 120rem){
+    html {
+        font-size: 150%;
+    }
+}
